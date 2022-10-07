@@ -1,0 +1,322 @@
+header .menu {
+  background-color: #fff;
+  height: 125px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+}
+header .menu .logo {
+  padding: 0 80px;
+  position: relative;
+}
+header .menu .logo img {
+  width: 250px;
+  padding-left: 35px;
+  padding-top: 5px;
+}
+header .menu .menu_items {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+  position: relative;
+}
+header .menu .menu_items li {
+  border-radius: 3px;
+  margin: 0 5px;
+}
+header .menu .menu_items li :hover, header .menu .menu_items li li.active {
+  transition: 0.4s;
+}
+header .menu .menu_items li a {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  color: black;
+}
+header .menu .btn_menu {
+  margin-right: 30px;
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+header .menu ul.show {
+  top: 125px;
+}
+
+@media screen and (max-width: 858px) {
+  header .menu {
+    height: 125px;
+    position: fixed;
+    z-index: 1;
+  }
+  header .menu .logo img {
+    width: 150px;
+    padding-left: 35px;
+  }
+  header .menu .btn_menu {
+    display: inline-flex;
+  }
+  header .menu .menu_items {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+    z-index: 1;
+  }
+  header .menu .menu_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  header .menu .menu_items li a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  header .menu .menu_items li a a:hover {
+    color: black;
+  }
+  header .menu .menu_items li li:hover {
+    background: none;
+  }
+  .main-container .page-box1 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .main-container .page-box2 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .main-container .page-box3 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.store-subtitle {
+  text-align: center;
+}
+.store-subtitle .button2 {
+  padding: 1px 80px;
+  margin-bottom: 20px;
+  background-color: rgb(173, 1, 1);
+  border: 1px solid rgb(173, 1, 1);
+  border-radius: 20px;
+}
+
+.store-title {
+  text-align: center;
+}
+.store-title .button1 {
+  padding: 1px 80px;
+  margin-bottom: 20px;
+  background-color: rgb(173, 1, 1);
+  border: 1px solid rgb(173, 1, 1);
+  border-radius: 20px;
+}
+
+.titulo1 {
+  color: rgb(157, 13, 37);
+  text-align: center;
+  padding: 20px;
+  margin-left: 380px;
+  margin-right: 380px;
+  background-color: hsla(0deg, 0%, 0%, 0.58);
+  font-family: "Rubik Wet Paint", cursive !important;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.main-v {
+  color: rgb(2, 1, 41);
+  padding: 20px;
+  width: 100%;
+  background-color: hsla(0deg, 0%, 0%, 0.792);
+  border: 4px solid rgb(0, 0, 0);
+  background-image: url(../Picture/friends5.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 800px;
+}
+.main-v img {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container .page-box1 {
+  height: 700px;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background: black;
+  border: 1px solid rgb(255, 86, 86);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../Picture/MainBoxIMG/air-jordan-mid-1-sneakers.jpeg);
+}
+.main-container .page-box1 .desc-box1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  position: relative;
+  text-shadow: 1px 1px 2px black;
+  top: 40%;
+  left: 2%;
+}
+.main-container .page-box1 .button1 {
+  padding: 10px;
+  font-size: 17px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  position: relative;
+  top: 78%;
+  left: 2%;
+}
+.main-container .page-box1 .button1 a {
+  text-decoration: none;
+  color: black;
+}
+.main-container .page-box1 .button1:hover {
+  background-color: rgb(212, 212, 212);
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.main-container .page-box2 {
+  height: 700px;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background: black;
+  border: 1px solid green;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://media.revistagq.com/photos/5fb3a1ab4d142f2d26bed688/4:3/w_3200,h_2400,c_limit/GettyImages-1228826669.jpg);
+}
+.main-container .page-box2 .desc-box2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  position: relative;
+  text-shadow: 1px 1px 2px black;
+  top: 40%;
+  left: 2%;
+}
+.main-container .page-box2 .button2 {
+  padding: 10px;
+  font-size: 17px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  position: relative;
+  top: 78%;
+  left: 2%;
+}
+.main-container .page-box2 .button2 a {
+  text-decoration: none;
+  color: black;
+}
+.main-container .page-box2 .button2:hover {
+  background-color: rgb(212, 212, 212);
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.main-container .page-box3 {
+  height: 700px;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background: black;
+  border: 1px solid blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://static.nike.com/a/images/f_auto/3bbd47d3-555d-4110-9ca0-0b6f6866aed7/image.jpeg);
+}
+.main-container .page-box3 .desc-box3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  position: relative;
+  text-shadow: 1px 1px 2px black;
+  top: 40%;
+  left: 2%;
+}
+.main-container .page-box3 .button3 {
+  padding: 10px;
+  font-size: 17px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  position: relative;
+  top: 78%;
+  left: 2%;
+}
+.main-container .page-box3 .button3 a {
+  text-decoration: none;
+  color: black;
+}
+.main-container .page-box3 .button3:hover {
+  background-color: rgb(212, 212, 212);
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 858px) {
+  main .main-v {
+    width: 100%;
+  }
+  main .main-v img {
+    width: 90px;
+  }
+  main .main-container .page-box1 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  main .main-container .page-box1 .button1 {
+    top: 68%;
+    left: 2%;
+  }
+  main .main-container .page-box2 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  main .main-container .page-box2 .button2 {
+    top: 58%;
+    left: 2%;
+  }
+  main .main-container .page-box3 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  main .main-container .page-box3 .button3 {
+    top: 78%;
+    left: 2%;
+  }
+}
+
+/*# sourceMappingURL=Style.css.map */
